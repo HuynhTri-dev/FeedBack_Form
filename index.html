@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="title">IntelRent Survey Form</h1>
+    <p id="description">
+      Thank you for taking the time to help us improve our website
+    </p>
+    <form action="" id="survey-form">
+      <!-- Cac thong tin so luoc ca nhan -->
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label id="name-label" for="name-label"
+          >Name
+          <input
+            type="text"
+            id="name"
+            name="name-label"
+            placeholder="Enter your name"
+            required
+          />
+        </label>
+        <label id="email-label" for="email-label"
+          >Email
+          <input
+            type="email"
+            id="email"
+            name="email-label"
+            placeholder="Enter your email"
+            required
+          />
+        </label>
+        <label id="number-label" for="number-label"
+          >Age (optional)
+          <input
+            type="number"
+            id="number"
+            name="number-label"
+            min="16"
+            max="99"
+            placeholder="Age"
+          />
+        </label>
+        <!-- Thanh pho  -->
+        <label for="city">
+          City
+          <select name="city" id="dropdown">
+            <option value="">Select city</option>
+            <option value="HCM">Hồ Chí Minh</option>
+            <option value="HN">Hà Nội</option>
+            <option value="NA">Nghệ An</option>
+            <option value="HT">Hà Tĩnh</option>
+          </select>
+        </label>
+      </fieldset>
+      <!--  -->
+      <fieldset>
+        <legend>Who you are?</legend>
+        <label for="landlord-type"
+          ><input
+            class="inline"
+            type="radio"
+            id="landlord-type"
+            name="account-type"
+            value="landlord-type"
+            checked
+          />
+          Landlord</label
+        >
+        <label for="tenant-type"
+          ><input
+            class="inline"
+            type="radio"
+            id="tenant-type"
+            name="account-type"
+            value="tenant-type"
+          />
+          Tenant</label
+        >
+      </fieldset>
+
+      <!--  -->
+      <fieldset>
+        <legend>What functions of the product have you used?</legend>
+        <label for="find-house"
+          ><input
+            class="inline"
+            type="checkbox"
+            name="functions-product"
+            id="find-house"
+            value="0"
+          />
+          Finding House</label
+        >
+        <label for="manage-house"
+          ><input
+            class="inline"
+            type="checkbox"
+            name="functions-product"
+            id="manage-house"
+            value="1"
+          />
+          Manage House</label
+        >
+        <label for="contract-on"
+          ><input
+            class="inline"
+            type="checkbox"
+            name="functions-product"
+            id="contract-on"
+            value="2"
+          />
+          Make a contract online</label
+        >
+        <label for="virtual-assistant"
+          ><input
+            class="inline"
+            type="checkbox"
+            name="functions-product"
+            id="virtual-assistant"
+            value="3"
+          />
+          Virtual assistant</label
+        >
+      </fieldset>
+
+      <!--  -->
+      <fieldset>
+        <legend>Describe your experience:</legend>
+        <label for="des-exp">
+          <textarea
+            name="des-exp"
+            id="des-exp"
+            rows="3"
+            cols="30"
+            placeholder="your experience"
+          ></textarea>
+        </label>
+      </fieldset>
+      <!-- Submit -->
+      <input type="submit" id="submit" value="Submit" />
+    </form>
+  </body>
+</html>
